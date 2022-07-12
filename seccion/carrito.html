@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="div-float network">
+            <a href="https://www.instagram.com/quimerastore_/" target="_blank">
+                <img src="../img/logoInstagram.png" alt="logo instagram" class="icon">
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="../img/logoWhatsapp.png" alt="logo whatsapp" class="icon">
+            </a>
+            <a href="https://www.tiktok.com/@quimera.store1" target="_blank">
+                <img src="../img/logoTiktok.png" alt="logo tiktok" class="icon">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="menu-desplegable"><a href="../index.html">Home</a></li>
+            <li class="menu-desplegable"><a href="../seccion/acercaDeNosotras.html">Acerca de nosotras</a></li>
+            <li class="menu-desplegable"><a href="../seccion/catalogo.html">Catálogo</a></li>
+            <li class="menu-desplegable"><a href="#">Carrito de compras</a></li>
+            <li class="menu-desplegable"><a href="../seccion/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h1>Carrito de compras</h1>
+    </div>
+
+    <div class="div-table-form">
+        <h3 class="title-table-form">Listado de productos</h3>
+    </div>
+
+    <section>
+        <div>
+            <table cellpadding="10">
+                <th>Prenda</th>
+                <th>Cantidad</th>
+                <th>Precio por unidad</th>
+                <th>Total</th>
+                <tr>
+                    <td>Remera</td>
+                    <td>2</td>
+                    <td>$1000</td>
+                    <td>$2000</td>
+                </tr>
+                <tr>
+                    <td>Buzo</td>
+                    <td>1</td>
+                    <td>$1300</td>
+                    <td>$1300</td>
+                </tr>
+                <tr>
+                    <td>Pantalon</td>
+                    <td>3</td>
+                    <td>$1400</td>
+                    <td>$4200</td>
+                </tr>
+                <tr>
+                    <td class="total">Total</td>
+                    <td></td>
+                    <td></td>
+                    <td class="price-total">$5500</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div class="div-table-form">
+        <h3 class="title-table-form">Metodos de pago</h3>
+    </div>
+
+    <section>
+        <div>
+            <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+                <label for="metodosDePago">Selecciona el metodo:</label>
+
+                <select name="metodosDePago">
+                    <option value="transferencia">Transferencia bancaria</option>
+                    <option value="debito">Tarjeta de debito</option>
+                    <option value="credito">Tarjeta de credito</option>
+                </select>
+                <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
+
+                <label for="nombreTarjeta" class="pay">Nombre y apellido del titular:</label>
+                <input type="text" class="name-card" name="nombre" placeholder="Nombre y apellido del titular">
+
+                <label for="nombreTarjeta">Numero de tarjeta:</label>
+                <input type="number" name="numTarjeta" placeholder="Numero de tarjeta">
+
+                <label for="vencimiento">Vencimiento:</label>
+                <input type="number" name="vencimiento" placeholder="Vencimiento">
+                <br>
+
+                <label for="codigo">Codigo de seguridad:</label>
+                <input type="number" name="codigo" placeholder="Codigo de seguridad">
+
+                <input type="submit" name="enviar" value="Enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <div class="div-table-form">
+        <h3 class="title-table-form">Metodos de envío</h3>
+    </div>
+
+    <section>
+        <div>
+            <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+                <label for="metodosDeEnvio">Selecciona el metodo:</label>
+
+                <select name="metodosDeEnvio">
+                    <option value="retirar">Retirar personalmente</option>
+                    <option value="enviar">Enviar por correo</option>
+                </select>
+                <!-- En caso de seleccionar la opcion retirar personalmente
+                    el resto del formulario va a desaparecer.-->
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <br>
+
+                <label for="apellido" class="last-name">Apellido:</label>
+                <input type="text" name="apellido" placeholder="Apellido" class="last-name">
+
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" placeholder="e-mail">
+                <br>
+
+                <label for="address">Direccion:</label>
+                <input type="text" name="address" placeholder="Direccion">
+
+                <label for="dpto">Dpto:</label>
+                <input type="text" name="dpto" placeholder="Dpto">
+                <br>
+
+                <label for="cp">Codigo postal:</label>
+                <input type="number" name="cp" placeholder="Codigo postal">
+
+                <input type="submit" name="enviar" value="Enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h5 class="pie-de-pagina">Argentina - Envios a todo el pais</h5>
+    </footer>
+
+</body>
+
+</html>
