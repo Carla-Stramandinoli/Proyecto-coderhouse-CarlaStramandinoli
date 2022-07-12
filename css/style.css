@@ -338,28 +338,46 @@ form input[type="submit"]:hover {
 
 /* Style acerca de nosotras */
 
-.img-description-nos {
-    position: absolute;
-    width: 50%;
-    margin-top: 3%;
-    margin-left: 4%;
-}
-
 .img-nos {
     width: 100%;
     border-radius: 7%;
+    margin-left: 5%;
     box-shadow: 15px 15px 5px #626465;
     margin-bottom: 5%;
     cursor: initial;
-
 }
 
-.description-nos {
-    width: 40%;
-    margin-top: 12%;
-    margin-left: 59%;
+#description-nos {
+    width: 80%;
 }
 
 .p-description-nos {
+    width: 100%;
     font-size: 23px;
+}
+
+div #img-description-nos {
+    grid-area: imagen;
+}
+
+div #description-nos {
+    grid-area: parrafo;
+}
+
+.padre-seccion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "imagen parrafo""imagen parrafo";
+    column-gap: 85px;
+    row-gap: 60px;
+}
+
+#img-description-nos {
+    align-self:flex-end;
+}
+
+#description-nos {
+    align-self: center;
+    text-align: center;
 }
