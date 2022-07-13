@@ -184,7 +184,7 @@ footer {
     width: 50%;
 }
 
-form {
+.form-contact {
     width: 80%;
     padding: 16px;
     border-radius: 10px;
@@ -197,8 +197,8 @@ form label {
     font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"] {
+form input,
+form select {
     width: 180px;
     padding: 3px 10px;
     border-radius: 5px;
@@ -291,7 +291,7 @@ td {
     color: white;
     background-color: #15568f;
 }
-
+/*
 .form-pay-shipping {
     width: 740px;
     padding: 16px;
@@ -334,16 +334,42 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     cursor: pointer;
+} */
+.form-pay-shipping {
+    width: 80%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.flex-form-pay{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.form-pay-shipping {
+    display: flex;
+    flex-direction: column;
+align-self: center;
+background-color: #d1e7fa;
+font-weight: bold;
+color: #15568f;
+width: 100%;
+padding: 16px;
 }
 
 /* Style acerca de nosotras */
 
+#img-description-nos{
+    width: 90%;
+}
 .img-nos {
     width: 100%;
     border-radius: 7%;
-    margin-left: 5%;
+    margin-left: 7%;
     box-shadow: 15px 15px 5px #626465;
     margin-bottom: 5%;
+    margin-top: 5%;
     cursor: initial;
 }
 
@@ -367,7 +393,7 @@ div #description-nos {
 .padre-seccion {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50%;
     grid-template-areas: "imagen parrafo""imagen parrafo";
     column-gap: 85px;
     row-gap: 60px;

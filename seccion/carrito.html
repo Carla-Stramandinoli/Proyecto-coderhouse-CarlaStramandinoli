@@ -44,7 +44,7 @@
     </div>
 
     <section>
-        <div>
+        <div class="top">
             <table cellpadding="10">
                 <th>Prenda</th>
                 <th>Cantidad</th>
@@ -76,25 +76,24 @@
                 </tr>
             </table>
         </div>
-    </section>
-
-    <div class="div-table-form">
-        <h3 class="title-table-form">Metodos de pago</h3>
-    </div>
-
-    <section>
-        <div>
-            <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
-                <label for="metodosDePago">Selecciona el metodo:</label>
+   
+        <div class="flex-form-pay">
+            <div class="flex-form-shipping">
+                <div class="div-table-form">
+                    <h3 class="title-table-form">Metodos de pago</h3>
+                </div>
+                <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+                    <label for="metodosDePago">Selecciona el metodo:</label>
 
                 <select name="metodosDePago">
                     <option value="transferencia">Transferencia bancaria</option>
                     <option value="debito">Tarjeta de debito</option>
                     <option value="credito">Tarjeta de credito</option>
                 </select>
+                
                 <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
 
-                <label for="nombreTarjeta" class="pay">Nombre y apellido del titular:</label>
+                <label for="nombreTarjeta">Nombre y apellido del titular:</label>
                 <input type="text" class="name-card" name="nombre" placeholder="Nombre y apellido del titular">
 
                 <label for="nombreTarjeta">Numero de tarjeta:</label>
@@ -102,57 +101,54 @@
 
                 <label for="vencimiento">Vencimiento:</label>
                 <input type="number" name="vencimiento" placeholder="Vencimiento">
-                <br>
 
                 <label for="codigo">Codigo de seguridad:</label>
                 <input type="number" name="codigo" placeholder="Codigo de seguridad">
 
                 <input type="submit" name="enviar" value="Enviar">
 
-            </form>
-        </div>
-    </section>
+                </form>
+            </div>
+           
+            <div class="flex-form-shipping">
+                <div class="div-table-form">
+                    <h3 class="title-table-form">Metodos de envío</h3>
+                </div>
+                <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+                    <label for="metodosDeEnvio">Selecciona el metodo:</label>
 
-    <div class="div-table-form">
-        <h3 class="title-table-form">Metodos de envío</h3>
-    </div>
-
-    <section>
-        <div>
-            <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
-                <label for="metodosDeEnvio">Selecciona el metodo:</label>
-
-                <select name="metodosDeEnvio">
-                    <option value="retirar">Retirar personalmente</option>
-                    <option value="enviar">Enviar por correo</option>
-                </select>
-                <!-- En caso de seleccionar la opcion retirar personalmente
+                    <select name="metodosDeEnvio">
+                        <option value="retirar">Retirar personalmente</option>
+                        <option value="enviar">Enviar por correo</option>
+                    </select>
+                    <!-- En caso de seleccionar la opcion retirar personalmente
                     el resto del formulario va a desaparecer.-->
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Nombre">
-                <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <br>
 
-                <label for="apellido" class="last-name">Apellido:</label>
-                <input type="text" name="apellido" placeholder="Apellido" class="last-name">
+                    <label for="apellido" class="last-name">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Apellido" class="last-name">
 
-                <label for="email">E-mail:</label>
-                <input type="text" name="email" placeholder="e-mail">
-                <br>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" placeholder="e-mail">
+                    <br>
 
-                <label for="address">Direccion:</label>
-                <input type="text" name="address" placeholder="Direccion">
+                    <label for="address">Direccion:</label>
+                    <input type="text" name="address" placeholder="Direccion">
 
-                <label for="dpto">Dpto:</label>
-                <input type="text" name="dpto" placeholder="Dpto">
-                <br>
+                    <label for="dpto">Dpto:</label>
+                    <input type="text" name="dpto" placeholder="Dpto">
+                    <br>
 
-                <label for="cp">Codigo postal:</label>
-                <input type="number" name="cp" placeholder="Codigo postal">
+                    <label for="cp">Codigo postal:</label>
+                    <input type="number" name="cp" placeholder="Codigo postal">
 
-                <input type="submit" name="enviar" value="Enviar">
+                    <input type="submit" name="enviar" value="Enviar">
 
-            </form>
+                </form>
+            </div>
         </div>
     </section>
 
