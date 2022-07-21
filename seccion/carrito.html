@@ -39,8 +39,8 @@
         <h1>Carrito de compras</h1>
     </div>
 
-    <div class="div-table-form">
-        <h3 class="title-table-form">Listado de productos</h3>
+    <div class="title-table">
+        <h3>Listado de productos</h3>
     </div>
 
     <section>
@@ -76,45 +76,44 @@
                 </tr>
             </table>
         </div>
-   
-        <div class="flex-form-pay">
-            <div class="flex-form-shipping">
-                <div class="div-table-form">
-                    <h3 class="title-table-form">Metodos de pago</h3>
-                </div>
-                <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+
+        <div class="title-form">
+            <h3 class="title-pay">Metodos de pago</h3>
+
+            <h3 class="title-shipping">Metodos de envío</h3>
+        </div>
+        <div class="flex-form">
+            <div class="child">
+                <form action="" method="get" enctype="multipart/form-data" class="form-pay">
                     <label for="metodosDePago">Selecciona el metodo:</label>
 
-                <select name="metodosDePago">
-                    <option value="transferencia">Transferencia bancaria</option>
-                    <option value="debito">Tarjeta de debito</option>
-                    <option value="credito">Tarjeta de credito</option>
-                </select>
-                
-                <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
+                    <select name="metodosDePago">
+                        <option value="transferencia">Transferencia bancaria</option>
+                        <option value="debito">Tarjeta de debito</option>
+                        <option value="credito">Tarjeta de credito</option>
+                    </select>
 
-                <label for="nombreTarjeta">Nombre y apellido del titular:</label>
-                <input type="text" class="name-card" name="nombre" placeholder="Nombre y apellido del titular">
+                    <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
 
-                <label for="nombreTarjeta">Numero de tarjeta:</label>
-                <input type="number" name="numTarjeta" placeholder="Numero de tarjeta">
+                    <label for="nombreTarjeta">Nombre y apellido del titular:</label>
+                    <input type="text" class="campo" name="nombre" placeholder="Nombre y apellido del titular">
 
-                <label for="vencimiento">Vencimiento:</label>
-                <input type="number" name="vencimiento" placeholder="Vencimiento">
+                    <label for="nombreTarjeta">Numero de tarjeta:</label>
+                    <input class="campo"type="number" name="numTarjeta" placeholder="Numero de tarjeta">
 
-                <label for="codigo">Codigo de seguridad:</label>
-                <input type="number" name="codigo" placeholder="Codigo de seguridad">
+                    <label for="vencimiento">Vencimiento:</label>
+                    <input class="campo" type="number" name="vencimiento" placeholder="Vencimiento">
 
-                <input type="submit" name="enviar" value="Enviar">
+                    <label for="codigo">Codigo de seguridad:</label>
+                    <input class="campo" type="number" name="codigo" placeholder="Codigo de seguridad">
+
+                    <input type="submit" name="enviar" value="Enviar">
 
                 </form>
             </div>
-           
-            <div class="flex-form-shipping">
-                <div class="div-table-form">
-                    <h3 class="title-table-form">Metodos de envío</h3>
-                </div>
-                <form action="" method="get" enctype="multipart/form-data" class="form-pay-shipping">
+
+            <div class="child">
+                <form action="" method="get" enctype="multipart/form-data" class="form-shipping">
                     <label for="metodosDeEnvio">Selecciona el metodo:</label>
 
                     <select name="metodosDeEnvio">
@@ -125,25 +124,23 @@
                     el resto del formulario va a desaparecer.-->
 
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <br>
+                    <input class="campo" type="text" name="nombre" placeholder="Nombre">
 
                     <label for="apellido" class="last-name">Apellido:</label>
-                    <input type="text" name="apellido" placeholder="Apellido" class="last-name">
+                    <input class="campo" type="text" name="apellido" placeholder="Apellido" class="last-name">
 
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email" placeholder="e-mail">
-                    <br>
+                    <input class="campo"t ype="text" name="email" placeholder="e-mail">
 
                     <label for="address">Direccion:</label>
-                    <input type="text" name="address" placeholder="Direccion">
+                    <input class="campo" type="text" name="address" placeholder="Direccion">
 
                     <label for="dpto">Dpto:</label>
-                    <input type="text" name="dpto" placeholder="Dpto">
-                    <br>
+                    <input class="campo" type="text" name="dpto" placeholder="Dpto">
+        
 
                     <label for="cp">Codigo postal:</label>
-                    <input type="number" name="cp" placeholder="Codigo postal">
+                    <input class="campo" type="number" name="cp" placeholder="Codigo postal">
 
                     <input type="submit" name="enviar" value="Enviar">
 
