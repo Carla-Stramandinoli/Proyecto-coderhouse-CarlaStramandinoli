@@ -239,7 +239,7 @@ form [type="submit"]:hover {
 
 .img-support {
     position: absolute;
-    top: 38%;
+    top: 26%;
     left: 53%;
     width: 42%;
 }
@@ -514,7 +514,7 @@ div #description-nos {
     }
 
     .img-support {
-        top: 70%;
+        top: 73%;
         left: 5%;
         width: 90%;
     }
