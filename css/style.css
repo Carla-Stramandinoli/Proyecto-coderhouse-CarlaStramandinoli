@@ -239,7 +239,7 @@ form [type="submit"]:hover {
 
 .img-support {
     position: absolute;
-    top: 21%;
+    top: 38%;
     left: 53%;
     width: 42%;
 }
@@ -257,11 +257,16 @@ form [type="submit"]:hover {
     color: #15568f;
     text-align: center;
 }
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 table {
     border: solid 5px #15568f;
-    width: 773px;
-    margin-left: 30%;
+    width: 50%;
+    justify-content: center;
     text-align: center;
 }
 
@@ -296,9 +301,9 @@ td {
 }
 
 .title-form {
-display: flex;
-flex-direction: row;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .title-pay,
@@ -337,6 +342,7 @@ justify-content: center;
 
 #img-description-nos {
     width: 90%;
+    align-self: flex-end;
 }
 
 .img-nos {
@@ -375,11 +381,141 @@ div #description-nos {
     row-gap: 60px;
 }
 
-#img-description-nos {
-    align-self: flex-end;
-}
-
 #description-nos {
     align-self: center;
     text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    nav {
+        margin-top: -1%;
+        background-color: transparent;
+    }
+
+    .div-float {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .network {
+        margin-left: 74%;
+        margin-top: 15%;
+    }
+
+    .div-cart {
+        position: absolute;
+        z-index: 2;
+        margin-left: 78.7%;
+        margin-top: 23%;
+    }
+
+    .title {
+        margin-top: 17%;
+        width: 75%;
+    }
+
+    .div-img {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .first {
+        width: 55%;
+        top: 23%;
+    }
+
+    .second {
+        width: 70%;
+        left: 21%;
+        top: 42%;
+    }
+
+    .last {
+        width: 61%;
+        left: 38%;
+        top: 62%;
+    }
+
+    /* Style catalogo */
+
+    .div-imgs {
+        position: absolute;
+        width: 40%;
+    }
+
+    .tshirt {
+        left: 8%;
+        top: 20%;
+    }
+
+    .pants {
+        left: 55%;
+        top: 30%;
+    }
+
+    .jackets {
+        left: 8%;
+        top: 50%;
+    }
+
+    .boys {
+        left: 55%;
+        top: 60%;
+    }
+
+    /* Style acerca de nosotras */
+
+    .p-description-nos {
+        margin-top: -88%;
+        margin-left: 15%;
+        margin-bottom: 8%;
+    }
+
+    .padre-seccion {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 50%;
+        grid-template-areas: "imagen""parrafo";
+        column-gap: 85px;
+        row-gap: 60px;
+    }
+
+    #description-nos {
+        width: 160%;
+    }
+
+    #img-description-nos {
+        align-self: start;
+        width: 173%;
+    }
+
+    /* Style carrito */
+
+    table {
+        width: 350px;
+        margin-left: 1%;
+    }
+
+    .child {
+        margin: -10px 10px 20px 0px;
+        padding: 8px 10px 10px 12px;
+    }
+
+    /* Style contacto */
+
+    .div-form {
+        width: 100%;
+        margin-top: 19%;
+    }
+
+    .form-contact {
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+
+    .img-support {
+        top: 70%;
+        left: 5%;
+        width: 90%;
+    }
 }
