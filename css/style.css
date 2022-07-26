@@ -92,6 +92,14 @@ h1 {
     cursor: initial;
 }
 
+.img-home1:hover,
+.img-nosotras:hover,
+.img-store:hover {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
 .img-nosotras {
     border-radius: 37%;
     width: 100%;
@@ -157,7 +165,7 @@ footer {
 .div-imgs a {
     position: absolute;
 }
-
+ 
 .tshirt {
     left: 8%;
     top: 12%;
@@ -353,6 +361,21 @@ td {
     margin-bottom: 5%;
     margin-top: 5%;
     cursor: initial;
+    animation-name: fadeInLeft;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
 }
 
 #description-nos {
@@ -362,6 +385,21 @@ td {
 .p-description-nos {
     width: 100%;
     font-size: 23px;
+    animation-name: efect-description;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes efect-description {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
 }
 
 div #img-description-nos {
