@@ -458,20 +458,21 @@ div #description-nos {
     }
 
     .first {
-        width: 55%;
-        top: 23%;
+        width: 60%;
+        top: 25%;
+        left: 25%;
     }
 
     .second {
         width: 70%;
-        left: 21%;
-        top: 42%;
+        left: 16%;
+        top: 66%;
     }
 
     .last {
         width: 61%;
-        left: 38%;
-        top: 62%;
+        left: 20%;
+        top: 98%;
     }
 
     /* Style catalogo */
