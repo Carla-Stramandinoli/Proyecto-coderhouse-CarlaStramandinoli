@@ -36,6 +36,10 @@ header {
     height: 40px;
 }
 
+.color-quimera {
+    color: #8C6169;
+}
+
 a {
     text-decoration: none;
 }
@@ -143,9 +147,11 @@ footer {
 
 .div-imgs img {
     width: 100%;
-    box-shadow: 15px 15px 5px #626465;
-    margin-bottom: 10%;
 
+}
+
+.shadow-img {
+    box-shadow: 15px 15px 5px #626465;
 }
 
 .div-imgs {
@@ -174,7 +180,7 @@ footer {
 
 .boys {
     left: 61%;
-    top: 90%;
+    top: 90%;   
 }
 
 /* Style contacto */
