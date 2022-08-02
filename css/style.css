@@ -415,8 +415,12 @@ div #description-nos {
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
     nav {
-        margin-top: -1%;
+        margin-top: -17%;
         background-color: transparent;
+    }
+
+    .position-nav-mobile {
+    justify-content: flex-start !important;
     }
 
     .div-float {
@@ -425,19 +429,18 @@ div #description-nos {
     }
 
     .network {
-        margin-left: 74%;
+        margin-left: 61%;
     }
 
     .div-cart {
         position: absolute;
         z-index: 2;
-        margin-left: 78.7%;
-        margin-top: 23%;
+        margin-left: 87.7%;
     }
 
     .title {
-        margin-top: 17%;
-        width: 75%;
+        margin-top: 20%;
+        width: 100%;
     }
 
     .div-img {
@@ -447,53 +450,53 @@ div #description-nos {
 
     .first {
         width: 60%;
-        top: 25%;
+        top: 18%;
         left: 25%;
     }
 
     .second {
         width: 70%;
         left: 16%;
-        top: 66%;
+        top: 45%;
     }
 
     .last {
         width: 61%;
         left: 20%;
-        top: 98%;
+        top: 68%;
     }
 
     /* Style catalogo */
 
     .div-imgs {
         position: absolute;
-        width: 40%;
+        width: 43%;
     }
 
     .tshirt {
-        left: 8%;
+        left: 2%;
         top: 20%;
     }
 
     .pants {
-        left: 55%;
-        top: 30%;
+        left: 51%;
+        top: 20%;
     }
 
     .jackets {
-        left: 8%;
-        top: 50%;
+        left: 2%;
+        top: 49%;
     }
 
     .boys {
-        left: 55%;
-        top: 60%;
+        left: 51%;
+        top: 49%;
     }
 
     /* Style acerca de nosotras */
 
     .p-description-nos {
-        margin-top: -88%;
+        margin-top: -120%;
         margin-left: 15%;
         margin-bottom: 8%;
     }
@@ -541,11 +544,11 @@ div #description-nos {
     }
 
     .form-contact {
-        margin-top: 15%;
+        margin-top: 3%;
     }
 
     .img-support {
-        top: 80%;
+        top: 74%;
         width: 90%;
         position: absolute;
     }
