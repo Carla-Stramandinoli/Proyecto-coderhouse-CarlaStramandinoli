@@ -6,34 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de compras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
     <header>
-        <div class="div-float network">
-            <a href="https://www.instagram.com/quimerastore_/" target="_blank">
-                <img src="../img/logoInstagram.png" alt="logo instagram" class="icon">
-            </a>
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="../img/logoWhatsapp.png" alt="logo whatsapp" class="icon">
-            </a>
-            <a href="https://www.tiktok.com/@quimera.store1" target="_blank">
-                <img src="../img/logoTiktok.png" alt="logo tiktok" class="icon">
-            </a>
-        </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li class="menu-desplegable"><a href="../index.html">Home</a></li>
-            <li class="menu-desplegable"><a href="../seccion/acercaDeNosotras.html">Acerca de nosotras</a></li>
-            <li class="menu-desplegable"><a href="../seccion/catalogo.html">Catálogo</a></li>
-            <li class="menu-desplegable"><a href="#">Carrito de compras</a></li>
-            <li class="menu-desplegable"><a href="../seccion/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+        <nav class="nav-color navbar navbar-expand-lg bg-light">
+            <div class="container-fluid position-nav-mobile">
+                <a class="navbar-brand color-quimera" href="../index.html">Quimera Store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="vr"></div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/acercaDeNosotras.html">Nosotras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../seccion/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="div-float network">
+                <a href="https://www.instagram.com/quimerastore_/" target="_blank">
+                    <img src="../img/logoInstagram.png" alt="logo instagram" class="icon">
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="../img/logoWhatsapp.png" alt="logo whatsapp" class="icon">
+                </a>
+                <a href="https://www.tiktok.com/@quimera.store1" target="_blank">
+                    <img src="../img/logoTiktok.png" alt="logo tiktok" class="icon">
+                </a>
+            </div>
+
+    </header>
 
     <div class="title">
         <h1>Carrito de compras</h1>
@@ -44,115 +66,138 @@
     </div>
 
     <section>
-        <div class="top">
-            <table cellpadding="10">
-                <th>Prenda</th>
-                <th>Cantidad</th>
-                <th>Precio por unidad</th>
-                <th>Total</th>
-                <tr>
-                    <td>Remera</td>
-                    <td>2</td>
-                    <td>$1000</td>
-                    <td>$2000</td>
-                </tr>
-                <tr>
-                    <td>Buzo</td>
-                    <td>1</td>
-                    <td>$1300</td>
-                    <td>$1300</td>
-                </tr>
-                <tr>
-                    <td>Pantalon</td>
-                    <td>3</td>
-                    <td>$1400</td>
-                    <td>$4200</td>
-                </tr>
-                <tr>
-                    <td class="total">Total</td>
-                    <td></td>
-                    <td></td>
-                    <td class="price-total">$5500</td>
-                </tr>
-            </table>
+        <div class="row top">
+            <div class="col-md-11 col-sm-11">
+                <table class="table table-striped" cellpadding="10">
+                    <th>Prenda</th>
+                    <th>Cantidad</th>
+                    <th>Precio por unidad</th>
+                    <th>Total</th>
+                    <tr class="bg-light">
+                        <td>Remera</td>
+                        <td>2</td>
+                        <td>$1000</td>
+                        <td>$2000</td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td>Buzo</td>
+                        <td>1</td>
+                        <td>$1300</td>
+                        <td>$1300</td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td>Pantalon</td>
+                        <td>3</td>
+                        <td>$1400</td>
+                        <td>$4200</td>
+                    </tr>
+                    <tr class="bg-light">
+                        <td class="total">Total</td>
+                        <td></td>
+                        <td></td>
+                        <td class="price-total">$5500</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="title-form">
-            <h3 class="title-pay">Metodos de pago</h3>
-
-            <h3 class="title-shipping">Metodos de envío</h3>
         </div>
-        <div class="flex-form">
-            <div class="child">
-                <form action="" method="get" enctype="multipart/form-data" class="form-pay">
-                    <label for="metodosDePago">Selecciona el metodo:</label>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h3 class="title-shipping text-center">Metodos de envío</h3>
 
-                    <select name="metodosDePago">
-                        <option value="transferencia">Transferencia bancaria</option>
-                        <option value="debito">Tarjeta de debito</option>
-                        <option value="credito">Tarjeta de credito</option>
-                    </select>
+                <div class="child">
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col-md-12 col-sm-12">
+                                <form action="" method="get" enctype="multipart/form-data" class="form-pay">
+                                    <label for="metodosDePago" class="form-label">Selecciona el metodo:</label>
 
-                    <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
+                                    <select name="metodosDePago" class="form-select">
+                                        <option value="transferencia">Transferencia bancaria</option>
+                                        <option value="debito">Tarjeta de debito</option>
+                                        <option value="credito">Tarjeta de credito</option>
+                                    </select>
 
-                    <label for="nombreTarjeta">Nombre y apellido del titular:</label>
-                    <input type="text" class="campo" name="nombre" placeholder="Nombre y apellido del titular">
+                                    <!-- En caso de seleccionar la opcion transferencia el resto del formulario va a desaparecer.-->
 
-                    <label for="nombreTarjeta">Numero de tarjeta:</label>
-                    <input class="campo"type="number" name="numTarjeta" placeholder="Numero de tarjeta">
+                                    <label for="nombreTarjeta" class="form-label">Nombre y apellido del titular:</label>
+                                    <input type="text" class="form-control" name="nombre"
+                                        placeholder="Nombre y apellido del titular">
 
-                    <label for="vencimiento">Vencimiento:</label>
-                    <input class="campo" type="number" name="vencimiento" placeholder="Vencimiento">
+                                    <label for="nombreTarjeta" class="form-label">Numero de tarjeta:</label>
+                                    <input class="form-control" type="number" name="numTarjeta"
+                                        placeholder="Numero de tarjeta">
 
-                    <label for="codigo">Codigo de seguridad:</label>
-                    <input class="campo" type="number" name="codigo" placeholder="Codigo de seguridad">
+                                    <label for="vencimiento" class="form-label">Vencimiento:</label>
+                                    <input class="form-control" type="number" name="vencimiento"
+                                        placeholder="Vencimiento">
 
-                    <input type="submit" name="enviar" value="Enviar">
+                                    <label for="codigo" class="form-label">Codigo de seguridad:</label>
+                                    <input class="form-control" type="number" name="codigo"
+                                        placeholder="Codigo de seguridad">
 
-                </form>
+                                    <input class="button-carrito" type="submit" name="enviar" value="Enviar">
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="child">
-                <form action="" method="get" enctype="multipart/form-data" class="form-shipping">
-                    <label for="metodosDeEnvio">Selecciona el metodo:</label>
+            <div class="col-md-6 col-sm-12">
+                <h3 class="title-pay text-center">Metodos de pago</h3>
+                <div class="child">
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col-md-12 col-sm-12">
+                                <form action="" method="get" enctype="multipart/form-data" class="form-shipping">
+                                    <label for="metodosDeEnvio" class="form-label">Selecciona el metodo:</label>
 
-                    <select name="metodosDeEnvio">
-                        <option value="retirar">Retirar personalmente</option>
-                        <option value="enviar">Enviar por correo</option>
-                    </select>
-                    <!-- En caso de seleccionar la opcion retirar personalmente
+                                    <select name="metodosDeEnvio" class="form-select">
+                                        <option value="retirar">Retirar personalmente</option>
+                                        <option value="enviar">Enviar por correo</option>
+                                    </select>
+                                    <!-- En caso de seleccionar la opcion retirar personalmente
                     el resto del formulario va a desaparecer.-->
 
-                    <label for="nombre">Nombre:</label>
-                    <input class="campo" type="text" name="nombre" placeholder="Nombre">
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input class="form-control" type="text" name="nombre" placeholder="Nombre">
 
-                    <label for="apellido" class="last-name">Apellido:</label>
-                    <input class="campo" type="text" name="apellido" placeholder="Apellido" class="last-name">
+                                    <label for="apellido" class="form-label">Apellido:</label>
+                                    <input class="form-control" type="text" name="apellido" placeholder="Apellido"
+                                        class="last-name">
 
-                    <label for="email">E-mail:</label>
-                    <input class="campo"t ype="text" name="email" placeholder="e-mail">
+                                    <label for="email" class="form-label">E-mail:</label>
+                                    <input class="form-control" t ype="text" name="email" placeholder="e-mail">
 
-                    <label for="address">Direccion:</label>
-                    <input class="campo" type="text" name="address" placeholder="Direccion">
+                                    <label for="address" class="form-label">Direccion:</label>
+                                    <input class="form-control" type="text" name="address" placeholder="Direccion">
 
-                    <label for="dpto">Dpto:</label>
-                    <input class="campo" type="text" name="dpto" placeholder="Dpto">
-        
+                                    <label for="dpto" class="form-label">Dpto:</label>
+                                    <input class="form-control" type="text" name="dpto" placeholder="Dpto">
 
-                    <label for="cp">Codigo postal:</label>
-                    <input class="campo" type="number" name="cp" placeholder="Codigo postal">
 
-                    <input type="submit" name="enviar" value="Enviar">
+                                    <label for="cp" class="form-label">Codigo postal:</label>
+                                    <input class="form-control" type="number" name="cp" placeholder="Codigo postal">
 
-                </form>
+                                    <input class="button-carrito" type="submit" name="enviar" value="Enviar">
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </section>
-
+    <br>
     <footer class="footer">
         <h5 class="pie-de-pagina">Argentina - Envios a todo el pais</h5>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
