@@ -441,16 +441,16 @@ table .price-total {
 }
 
 div #img-description-nos {
-  grid-row: 1;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-column: 1;
+  -ms-grid-column: 1;
   grid-area: imagen;
 }
 
 div #description-nos {
-  grid-row: 1;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-column: 2;
+  -ms-grid-column: 2;
   grid-area: parrafo;
 }
 
