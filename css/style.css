@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(../img/fondo1.jpeg);
+  background-image: url(../seccion/img/fondo1.jpeg);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -13,7 +13,7 @@ header {
   position: fixed;
   width: 98%;
   z-index: 3;
-  margin-top: -5%;
+  margin-top: 0%;
   margin-left: 1%;
   -webkit-box-shadow: 3px 2px 4px #626465;
           box-shadow: 3px 2px 4px #626465;
@@ -46,7 +46,8 @@ a {
 }
 
 .title {
-  margin-top: 5%;
+  position: absolute;
+  top: 10%;
   width: 100%;
 }
 
@@ -188,6 +189,27 @@ footer .pie-de-pagina {
 .transicion {
   -webkit-transition: linear;
   transition: linear;
+}
+
+/* Style remeras */
+.div-imgs-catalogue {
+  position: absolute;
+  width: 20%;
+}
+
+.tshirt-catalogue1 {
+  left: 30%;
+  top: 23%;
+}
+
+.tshirt-catalogue2 {
+  left: 52%;
+  top: 23%;
+}
+
+.tshirt-catalogue3 {
+  left: 74%;
+  top: 23%;
 }
 
 /* Style contacto */
@@ -355,9 +377,12 @@ table .price-total {
 
 /* Style nosotras */
 #img-description-nos {
-  width: 90%;
+  width: 40%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: absolute;
+  top: 18%;
+  left: 6%;
 }
 
 #img-description-nos .img-nos {
@@ -480,9 +505,15 @@ div #description-nos {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+  margin-top: 40%;
+  margin-left: 3%;
+  margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .header-remeras {
+    margin-top: 16%;
+  }
   nav {
     margin-top: -17%;
     background-color: transparent;

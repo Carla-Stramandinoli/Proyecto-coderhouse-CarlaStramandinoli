@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../img/fondo1.jpeg);
+    background-image: url(../seccion/img/fondo1.jpeg);
     background-repeat: repeat;
     background-size: cover;
 }
@@ -15,7 +15,7 @@ header {
     position: fixed;
     width: 98%;
     z-index: 3;
-    margin-top: -5%;
+    margin-top: 0%;
     margin-left: 1%;
     box-shadow: 3px 2px 4px #626465;
 
@@ -47,7 +47,8 @@ a {
 }
 
 .title {
-    margin-top: 5%;
+    position: absolute;
+    top: 10%;
     width: 100%;
 
     h1 {
@@ -66,6 +67,7 @@ a {
     left: $left;
     top: $top;
 }
+
 .first {
     @include position-img(37%, 8%, 12%);
 
@@ -189,6 +191,26 @@ footer {
     transition: linear;
 }
 
+/* Style remeras */
+.div-imgs-catalogue {
+    position: absolute;
+    width: 20%;
+}
+
+.tshirt-catalogue1{
+    left: 30%;
+    top: 23%;
+}
+
+.tshirt-catalogue2{
+    left: 52%;
+    top: 23%;
+}
+
+.tshirt-catalogue3 {
+    left: 74%;
+    top: 23%;
+}
 /* Style contacto */
 
 .div-form {
@@ -285,6 +307,7 @@ table {
         background-color: #f2cbc2 !important;
     }
 }
+
 .th {
     border: solid 2px #8c6169;
     font-size: 18px;
@@ -301,11 +324,11 @@ $price-shipping-map: (
     t-fuente: 30px,
     color: #7b4b54,
     fondo: #f2cbc2
-);
+    );
 
-    .price-shipping1 {
-        color: map-get($map: $price-shipping-map, $key: color) !important;
-    }
+.price-shipping1 {
+    color: map-get($map: $price-shipping-map, $key: color) !important;
+}
 
 
 .title-form {
@@ -343,8 +366,11 @@ $price-shipping-map: (
 /* Style nosotras */
 
 #img-description-nos {
-    width: 90%;
+    width: 40%;
     align-self: flex-end;
+     position: absolute;
+     top: 18%;
+     left: 6%;
 
     .img-nos {
         width: 100%;
@@ -410,7 +436,7 @@ div #description-nos {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
-    grid-template-areas: "imagen parrafo" "imagen parrafo";
+    grid-template-areas: "imagen parrafo""imagen parrafo";
     column-gap: 85px;
     row-gap: 60px;
 }
@@ -418,9 +444,16 @@ div #description-nos {
 #description-nos {
     align-self: center;
     text-align: center;
+    margin-top: 40%;		
+    margin-left: 3%;	
+    margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+    .header-remeras {
+        margin-top: 16%;
+    }
+
     nav {
         margin-top: -17%;
         background-color: transparent;
@@ -512,7 +545,7 @@ div #description-nos {
         display: grid;
         grid-template-columns: 50%;
         grid-template-rows: 50%;
-        grid-template-areas: "imagen" "parrafo";
+        grid-template-areas: "imagen""parrafo";
         column-gap: 85px;
         row-gap: 60px;
     }
